@@ -22,7 +22,7 @@ for i in range(n):
 
 
 # Sort points by distance with initial point
-def sort_point_by_distance(point, points: list) -> list:
+def sort_point_by_distance(point, points: list) -> list:  # pylint: disable=W0621
     """
     This function returns a sorted point list by the euclidean distance
     between a reference point and the rest of the points
@@ -34,7 +34,7 @@ def sort_point_by_distance(point, points: list) -> list:
     Returns:
         list: List of sorted points
     """
-    for i in range(len(points)):  # pylint: disable=C0200
+    for i in range(len(points)):  # pylint: disable=C0200 W0621
         min_idx = i
         min_distance = point.distance_to(points[min_idx])
         for j in range(i + 1, len(points)):
