@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from point import Point
+from xyz import Point
 
 n = 25
 m = 0
